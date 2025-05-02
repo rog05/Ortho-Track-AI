@@ -1,0 +1,20 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pose Tracking</title>
+  <style>
+    body { font-family: Arial; margin: 0; background: #000; color: #fff; text-align: center; }
+    #dialog { position: absolute; top: 0; left: 0; width: 100%; background: white; color: black; padding: 10px; font-size: 20px; }
+    video { width: 100%; height: auto; }
+  </style>
+</head>
+<body>
+  <div id="dialog">Loading pose feedback...</div>
+  <video id="video" autoplay playsinline></video>
+  <script>
+    const dialog = document.getElementById("dialog");
+    dialog.innerText = "Start moving to see feedback...";
+  </script>
+</body>
+</html>
