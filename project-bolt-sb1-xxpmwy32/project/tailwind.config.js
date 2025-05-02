@@ -1,0 +1,90 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
+  theme: {
+    extend: {
+      colors: {
+        primary: {
+          50: '#F0FAFB',
+          100: '#E0F7FA',
+          200: '#B2EBF2',
+          300: '#80DEEA',
+          400: '#4DD0E1',
+          500: '#26C6DA',
+          600: '#00ACC1',
+          700: '#0097A7',
+          800: '#00838F',
+          900: '#006064',
+        },
+        secondary: {
+          50: '#EFFAF5',
+          100: '#D0F0E6',
+          200: '#A3E0D4',
+          300: '#76D1C1',
+          400: '#4AC1AF',
+          500: '#1DB29C',
+          600: '#168F7D',
+          700: '#106C5E',
+          800: '#0A483F',
+          900: '#05241F',
+        },
+        accent: {
+          50: '#E0F2F1',
+          100: '#B2DFDB',
+          200: '#80CBC4',
+          300: '#4DB6AC',
+          400: '#26A69A',
+          500: '#009688',
+          600: '#00897B',
+          700: '#00796B',
+          800: '#00695C',
+          900: '#004D40',
+        },
+        neutral: {
+          50: '#F5F5F5',
+          100: '#EEEEEE',
+          200: '#E0E0E0',
+          300: '#CCCCCC',
+          400: '#BDBDBD',
+          500: '#9E9E9E',
+          600: '#757575',
+          700: '#616161',
+          800: '#424242',
+          900: '#212121',
+        },
+        success: '#4CAF50',
+        warning: '#FFC107',
+        error: '#F44336',
+      },
+      fontFamily: {
+        sans: ['Inter', 'sans-serif'],
+        display: ['Montserrat', 'sans-serif'],
+      },
+      spacing: {
+        '72': '18rem',
+        '84': '21rem',
+        '96': '24rem',
+      },
+      boxShadow: {
+        card: '0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)',
+        dropdown: '0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)',
+      },
+      animation: {
+        fadeIn: 'fadeIn 0.5s ease-in-out',
+        slideUp: 'slideUp 0.3s ease-out',
+        pulse: 'pulse 1.5s infinite',
+      },
+      keyframes: {
+        fadeIn: {
+          '0%': { opacity: '0' },
+          '100%': { opacity: '1' },
+        },
+        slideUp: {
+          '0%': { transform: 'translateY(20px)', opacity: '0' },
+          '100%': { transform: 'translateY(0)', opacity: '1' },
+        },
+      },
+    },
+  },
+  plugins: [],
+};
